@@ -18,5 +18,10 @@ class MainActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+
+        val button = findViewById<Button>(R.id.button_ok)
+        button.setOnClickListener {
+            Toast.makeText(this, "Кнопка ОК", Toast.LENGTH_SHORT).show()
+        }
     }
 }
