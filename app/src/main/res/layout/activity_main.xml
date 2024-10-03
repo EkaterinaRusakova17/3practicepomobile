@@ -5,97 +5,95 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".MainActivity">
-
-
-    <EditText
-        android:id="@+id/edit_text"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Введите текст" />
+    tools:context=".MainActivity"
+    android:orientation="vertical">
 
     <LinearLayout
-        android:id="@+id/first_line"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        tools:context=".MainActivity">
+        android:layout_height="80dp"
+        android:orientation="horizontal" >
 
-        <Button
-            android:id="@+id/button_blackText"
-            android:layout_width="wrap_content"
+        <TextView
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:layout_marginTop="5dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp"
-            android:text="ЧЕРНЫЙ ТЕКСТ" />
+            android:layout_weight="1" />
 
-        <Button
-            android:id="@+id/button_redText"
-            android:layout_width="wrap_content"
+        <TextView
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:layout_marginTop="5dp"
-            android:layout_marginEnd="5dp"
-            android:text="КРАСНЫЙ ТЕКСТ" />
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
 
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/second_line"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        tools:context=".MainActivity">
+        android:layout_height="80dp"
+        android:orientation="vertical" >
 
-        <Button
-            android:id="@+id/button_8sp"
-            android:layout_width="wrap_content"
+        <TextView
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:layout_marginTop="5dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp"
-            android:text="РАЗМЕР - 8SP" />
+            android:text="" />
 
-        <Button
-            android:id="@+id/button_24sp"
-            android:layout_width="wrap_content"
-            android:layout_height="53dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginEnd="5dp"
-            android:layout_weight="1"
-            android:text="РАЗМЕР - 24SP" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
     </LinearLayout>
 
-    <LinearLayout
-        android:id="@+id/trird_line"
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        tools:content=".MainActivity" >
+        android:layout_height="0dp"
+        android:layout_weight="1" >
 
-        <Button
-            android:id="@+id/button_whiteBackground"
-            android:layout_width="wrap_content"
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="100dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:layout_marginTop="5dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp"
-            android:text="БЕЛЫЙ ФОН " />
+            android:text=""
+            app:layout_constraintBottom_toBottomOf=""
+            app:layout_constraintEnd_toEndOf=""
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="24dp"
+            android:layout_marginStart="80dp"/>
 
-        <Button
-            android:id="@+id/button_yellowBackground"
-            android:layout_width="wrap_content"
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="100dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:layout_marginTop="5dp"
-            android:layout_marginEnd="5dp"
-            android:text="ЖЕЛТЫЙ ФОН" />
+            android:text=""
+            app:layout_constraintBottom_toBottomOf=""
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf=""
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="80dp"/>
 
-    </LinearLayout>
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            app:layout_constraintBottom_toBottomOf=""
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="64dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </LinearLayout>
+
