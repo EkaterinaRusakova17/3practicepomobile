@@ -5,97 +5,20 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    tools:context=".MainActivity"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    android:gravity="center">
 
-
-    <EditText
-        android:id="@+id/edit_text"
-        android:layout_width="match_parent"
+    <Button
+        android:id="@+id/btnHTTP"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Введите текст" />
+        android:text="Get via HTTP" />
 
-    <LinearLayout
-        android:id="@+id/first_line"
-        android:layout_width="match_parent"
+    <Button
+        android:id="@+id/btnOkHTTP"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        tools:context=".MainActivity">
-
-        <Button
-            android:id="@+id/button_blackText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:layout_marginTop="5dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp"
-            android:text="ЧЕРНЫЙ ТЕКСТ" />
-
-        <Button
-            android:id="@+id/button_redText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:layout_marginTop="5dp"
-            android:layout_marginEnd="5dp"
-            android:text="КРАСНЫЙ ТЕКСТ" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/second_line"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        tools:context=".MainActivity">
-
-        <Button
-            android:id="@+id/button_8sp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:layout_marginTop="5dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp"
-            android:text="РАЗМЕР - 8SP" />
-
-        <Button
-            android:id="@+id/button_24sp"
-            android:layout_width="wrap_content"
-            android:layout_height="53dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginEnd="5dp"
-            android:layout_weight="1"
-            android:text="РАЗМЕР - 24SP" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/trird_line"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        tools:content=".MainActivity" >
-
-        <Button
-            android:id="@+id/button_whiteBackground"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:layout_marginTop="5dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp"
-            android:text="БЕЛЫЙ ФОН " />
-
-        <Button
-            android:id="@+id/button_yellowBackground"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:layout_marginTop="5dp"
-            android:layout_marginEnd="5dp"
-            android:text="ЖЕЛТЫЙ ФОН" />
-
-    </LinearLayout>
+        android:text="Get via OkHTTP" />
 
 </LinearLayout>
