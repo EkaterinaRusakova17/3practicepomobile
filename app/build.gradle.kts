@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.toasthandler"
+    namespace = "com.example.linearlayout"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.toasthandler"
+        applicationId = "com.example.linearlayout"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
@@ -37,6 +37,13 @@ android {
 
 dependencies {
 
+    implementation("androidx.recyclerview:recyclerview:1.2.1")
+    implementation("com.github.bumptech.glide:glide:4.12.0")
+    annotationProcessor("com.github.bumptech.glide:compiler:4.12.0")
+    implementation("com.google.code.gson:gson:2.10.1")
+    implementation("com.squareup.okhttp3:okhttp:3.10.0")
+    implementation("com.jakewharton.timber:timber:5.0.1")
+    implementation("com.squareup.okhttp3:okhttp:4.2.2")
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
