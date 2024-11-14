@@ -1,14 +1,12 @@
 package com.example.linearlayout
 
-import android.graphics.Color
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
-import android.widget.EditText
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import com.example.attributes.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -19,6 +17,14 @@ class MainActivity : AppCompatActivity() {
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
+        }
+
+        val btnShowPic: Button = findViewById(R.id.btn_show_pic)
+
+        btnShowPic.setOnClickListener {
+            val intent = Intent(this, PicActivity::class.java)
+            intent.putExtra("picLink", "https://png.klev.club/uploads/posts/2024-05/png-klev-club-7keo-p-litso-sfa-png-28.png")
+            startActivity(intent)
         }
     }
 }
